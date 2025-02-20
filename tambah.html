@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tambah Tugas</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div
+      class="w-full max-w-lg mx-auto p-5 md:p-7 bg-white rounded-xl shadow-lg"
+    >
+      <h1 class="text-center font-bold text-2xl md:text-3xl mb-6">
+        Tambah Tugas
+      </h1>
+
+      <div class="flex flex-col">
+        <!-- Nama Tugas -->
+        <label for="nama_tugas" class="mb-1 text-sm md:text-base">
+          Nama Tugas
+        </label>
+        <input
+          type="text"
+          name="nama_tugas"
+          id="nama_tugas"
+          required
+          placeholder="Nama Tugas"
+          class="border border-blue-500 ring-1 ring-blue-500 rounded-md mb-4 py-2 px-3 text-sm md:text-base focus:ring-2 focus:ring-blue-600 outline-none"
+        />
+
+        <!-- Deadline -->
+        <label for="deadline" class="mb-1 text-sm md:text-base">
+          Deadline
+        </label>
+        <input
+          type="date"
+          name="deadline"
+          id="deadline"
+          required
+          class="border border-blue-500 ring-1 ring-blue-500 rounded-md mb-4 py-2 px-3 text-sm md:text-base focus:ring-2 focus:ring-blue-600 outline-none"
+        />
+
+        <!-- Keterangan -->
+        <label for="keterangan" class="mb-1 text-sm md:text-base">
+          Keterangan
+        </label>
+        <select
+          name="keterangan"
+          id="keterangan"
+          class="border border-blue-500 ring-1 ring-blue-500 rounded-md py-2 px-3 text-sm md:text-base focus:ring-2 focus:ring-blue-600 outline-none"
+        >
+          <option value="belum_selesai">Belum Selesai</option>
+        </select>
+
+        <!-- Tombol Aksi -->
+        <div class="mt-6 flex flex-col md:flex-row gap-3">
+          <a
+            id="tambah"
+            class="text-white text-center bg-blue-500 px-4 py-2 rounded-md w-full md:w-1/2 shadow-md hover:bg-blue-600 transition cursor-pointer"
+          >
+            Tambah
+          </a>
+          <a
+            href="index.html"
+            class="text-white text-center bg-gray-500 px-4 py-2 rounded-md w-full md:w-1/2 shadow-md hover:bg-gray-600 transition"
+          >
+            Batal
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
